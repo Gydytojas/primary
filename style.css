@@ -14,7 +14,7 @@ body {
 
 section {
     text-align: center;
-    padding: 100px;
+    padding: 50px;
     background-image: url(./img/bright_green_triangle.jpg);
     background-color: #27bb609a;
 }
@@ -22,7 +22,9 @@ section {
 .hd h1 {
     text-transform: uppercase;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 38px;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 0px;
 }
 
 h1 .whline {
@@ -31,6 +33,17 @@ h1 .whline {
     /* text-decoration-thickness: 5px;   */
     text-indent: 10px;
     font-weight: 700;
+    font-size: 50px;
+}
+
+.whtext {
+    margin-top: 0;
+    color: white;
+    font-size: 34px;
+}
+
+.htext {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 button {
@@ -39,6 +52,8 @@ button {
     padding: 8px 20px;
     color: white;
     border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
 .feat-head {
@@ -71,13 +86,13 @@ button {
 .feat-ico {
     background-color: rgb(216, 216, 216);
     border: 3px solid rgb(175, 175, 175);
-    border-radius: 58px;
-    padding: 14px 15px;
+    border-radius: 100%;
+    padding: 20px 20px;
 }
 
 .feat-ico img {
-    max-width: 22px;
-    max-height: 22px;
+    max-width: 25px;
+    max-height: 25px;
 }
 
 .feat-text {
@@ -115,9 +130,23 @@ button {
     justify-content: center;
 }
 
+.feat-ico-orange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .fa-solid {
     font-size: 40px;
     padding: 20px;
+}
+
+.fa-quote-left {
+    padding-right: 36px;
+}
+
+.fa-mobile-screen-button {
+    padding-right: 36px;
 }
 
 article {
@@ -138,12 +167,14 @@ article {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-weight: 700;
+    font-size: 16px;
     color: rgb(139, 139, 139);
 }
 
 .art-author {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
+    font-size: 16px;
     color: rgb(228, 106, 26);
 }
 
@@ -159,7 +190,6 @@ a {
 }
 
 a:hover {
-    /* background-color: none; */
     color: rgb(49, 179, 135);
 }
 
@@ -205,6 +235,22 @@ footer {
     .feat-elements-orange {
         grid-template-columns: 1fr;
     }
+
+    .feat-elements-orange > :first-child {
+        background-color: rgb(211, 84, 38);
+        padding-left: 12%;
+        padding-right: 20%;
+    }
+    
+    .feat-elements-orange > :nth-child(2n) {
+        padding-left: 12%;
+        padding-right: 20%;
+    }
+    
+    .feat-elements-orange > :nth-child(3n) {
+        padding-left: 12%;
+        padding-right: 20%;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -213,6 +259,10 @@ footer {
     }
     
     .hd h1 {
-        font-size: 20px;
+        font-size: 32px;
+    }
+
+    .art-text, .art-author {
+        font-size: 10px;
     }
 }
