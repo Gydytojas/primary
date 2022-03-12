@@ -22,7 +22,7 @@ section {
 .hd h1 {
     text-transform: uppercase;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
+    font-size: 38px;
 }
 
 h1 .whline {
@@ -30,6 +30,7 @@ h1 .whline {
     /* text-decoration-line: line-through; */
     /* text-decoration-thickness: 5px;   */
     text-indent: 10px;
+    font-weight: 700;
 }
 
 button {
@@ -58,6 +59,7 @@ button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 10px 12% 10px 12%;
 }
 
 .feat-el {
@@ -70,12 +72,16 @@ button {
     background-color: rgb(216, 216, 216);
     border: 3px solid rgb(175, 175, 175);
     border-radius: 58px;
-    padding: 15px 15px;
+    padding: 14px 15px;
 }
 
 .feat-ico img {
     max-width: 22px;
     max-height: 22px;
+}
+
+.feat-text {
+    padding: 10px 20px 10px 20px;
 }
 
 .feat-elements-orange {
@@ -91,6 +97,15 @@ button {
 
 .feat-elements-orange > :first-child {
     background-color: rgb(211, 84, 38);
+    padding-left: 24%;
+}
+
+.feat-elements-orange > :nth-child(2n) {
+    padding-right: 24%;
+}
+
+.feat-elements-orange > :nth-child(3n) {
+    padding-left: 24%;
 }
 
 .feat-el-orange {
@@ -98,6 +113,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.fa-solid {
+    font-size: 40px;
+    padding: 20px;
 }
 
 article {
